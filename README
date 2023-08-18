@@ -4,3 +4,11 @@ turns your Realtek RTL2832 based DVB dongle into a SDR receiver
 
 For more information see:
 https://osmocom.org/projects/rtl-sdr/wiki
+
+======================================================================
+rtl-sdr-blog-minimal
+
+Minimal changes to the osmocom drivers to make the V4 work. Adds:
+
+1) Support for V4 - Set correct LO frequency, set correct input switches, switch notch correctly.
+2) Offset tuning bias tee hack - enable/disable the bias tee using the offset tuning option which is unused for R820T2/R828D devices.
