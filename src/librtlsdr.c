@@ -1438,7 +1438,7 @@ int rtlsdr_get_index_by_serial(const char *serial)
 }
 
 /* Returns true if the manufact_check and product_check strings match what is in the dongles EEPROM */
-int rtlsdr_check_dongle_model(void *dev, char* manufact_check, char* product_check)
+int rtlsdr_check_dongle_model(void *dev, char *manufact_check, char *product_check)
 {
 	if ((strcmp(((rtlsdr_dev_t *)dev)->manufact, manufact_check) == 0 && strcmp(((rtlsdr_dev_t *)dev)->product, product_check) == 0))
 		return 1;
